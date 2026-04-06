@@ -1,0 +1,13 @@
+amount,claim_type_auto,claim_type_property,doc_count,text_length,missing_fields,has_police,has_fire,has_injury,has_legal,has_pending,complexity_label
+3200,1,0,1,850,0,0,0,0,0,0,low
+4800,1,0,2,1200,0,1,0,0,0,1,medium
+22000,0,1,3,2100,0,0,1,0,0,1,high
+1500,1,0,1,600,1,0,0,0,0,0,low
+9800,0,1,2,1600,0,0,0,0,0,1,medium
+35000,1,0,4,2600,0,1,0,1,1,1,high
+4200,0,1,1,780,0,0,0,0,0,0,low
+12500,0,1,2,1500,0,0,1,0,0,0,medium
+28000,1,0,3,2200,0,1,0,1,0,1,high
+5600,1,0,2,1100,0,0,0,0,0,0,low
+7600,0,1,2,1350,1,0,0,0,0,1,medium
+41000,0,1,5,3200,0,0,1,1,1,1,high

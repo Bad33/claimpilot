@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16
+    container_name: claimpilot_db
+    environment:
+      POSTGRES_DB: claimpilot
+      POSTGRES_USER: claimpilot_user
+      POSTGRES_PASSWORD: claimpilot_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - claimpilot_postgres_data:/var/lib/postgresql/data
+
+  api:
+    build: .
+    container_name: claimpilot_api
+    depends_on:
+      - db
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+
+volumes:
+  claimpilot_postgres_data:
